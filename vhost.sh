@@ -1,3 +1,5 @@
+cd ~/tools/
+
 #------------------------------------------------------
 echo "installing virtual host discovery"
 if [ ! -d ./virtual-host-discovery* ]; then

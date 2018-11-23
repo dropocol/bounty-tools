@@ -55,9 +55,11 @@ echo "done"
 
 
 
+cd ~/tools/zk-scripts/bounty-tools
+
 #---------------------------------------------------------------------
 #vhost
-chmod +x ./vhost.sh
+chmod +x vhost.sh
 ./vhost.sh
 
 
