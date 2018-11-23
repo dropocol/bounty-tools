@@ -55,10 +55,11 @@ echo "done"
 
 
 
-cd ~/tools/zk-scripts/bounty-tools
+cd ~/zk-scripts/bounty-tools
 
 #---------------------------------------------------------------------
 #vhost
+cd ~/zk-scripts/bounty-tools/
 chmod +x vhost.sh
 ./vhost.sh
 
@@ -66,6 +67,7 @@ chmod +x vhost.sh
 
 #---------------------------------------------------------------------
 #subdomain
+cd ~/zk-scripts/bounty-tools/
 chmod +x ./subdomain.sh
 ./subdomain.sh
 
@@ -73,6 +75,7 @@ chmod +x ./subdomain.sh
 
 #---------------------------------------------------------------------
 #takeover
+cd ~/zk-scripts/bounty-tools/
 chmod +x ./takeover.sh
 ./takeover.sh
 
@@ -80,6 +83,7 @@ chmod +x ./takeover.sh
 
 #---------------------------------------------------------------------
 #s3-bucket
+cd ~/zk-scripts/bounty-tools/
 chmod +x ./bucket.sh
 ./bucket.sh
 
@@ -87,6 +91,7 @@ chmod +x ./bucket.sh
 
 #---------------------------------------------------------------------
 #screenshot
+cd ~/zk-scripts/bounty-tools/
 chmod +x ./screenshot.sh
 ./screenshot.sh
 
@@ -94,6 +99,7 @@ chmod +x ./screenshot.sh
 
 #---------------------------------------------------------------------
 #git-tools
+cd ~/zk-scripts/bounty-tools/
 chmod +x ./github.sh
 ./github.sh
 
@@ -101,6 +107,7 @@ chmod +x ./github.sh
 
 #---------------------------------------------------------------------
 #link-scanner
+cd ~/zk-scripts/bounty-tools/
 chmod +x ./link-scanner.sh
 ./link-scanner.sh
 
@@ -108,6 +115,7 @@ chmod +x ./link-scanner.sh
 
 #---------------------------------------------------------------------
 #scanner
+cd ~/zk-scripts/bounty-tools/
 chmod +x ./scanner.sh
 ./scanner.sh
 
@@ -115,6 +123,7 @@ chmod +x ./scanner.sh
 
 #---------------------------------------------------------------------
 #scripts
+cd ~/zk-scripts/bounty-tools/
 chmod +x ./script.sh
 ./script.sh
 
