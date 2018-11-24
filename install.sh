@@ -57,6 +57,15 @@ echo "done"
 
 cd ~/zk-scripts/bounty-tools
 
+
+
+#---------------------------------------------------------------------
+#scripts
+cd ~/zk-scripts/bounty-tools/
+chmod +x ./script.sh
+./script.sh
+
+
 #---------------------------------------------------------------------
 #vhost
 cd ~/zk-scripts/bounty-tools/
@@ -120,12 +129,6 @@ chmod +x ./scanner.sh
 ./scanner.sh
 
 
-
-#---------------------------------------------------------------------
-#scripts
-cd ~/zk-scripts/bounty-tools/
-chmod +x ./script.sh
-./script.sh
 
 
 
