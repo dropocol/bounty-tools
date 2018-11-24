@@ -142,4 +142,5 @@ chmod +x ./scanner.sh
 echo -e "\n\n\n\n\n\n\n\n\n\n\nDone! All tools are set up in ~/tools"
 ls -la
 echo "export GITROB_ACCESS_TOKEN=token for gitrob"
+echo "export GITHUBTOKEN=token for github"
 echo "One last time: don't forget to set up AWS credentials in ~/.aws/!"
