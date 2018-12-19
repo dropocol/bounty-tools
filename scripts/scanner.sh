@@ -39,3 +39,23 @@ if [ ! -d ./sqlmap* ]; then
 fi
 cd ~/tools/
 echo "done"
+
+
+
+
+#------------------------------------------------------
+echo "installing cloudflair"
+if [ ! -d ./cloudflair ]; then
+    git clone https://github.com/christophetd/cloudflair.git
+    cd cloudflair
+    pyenv local 3.6.6
+    pip install -r requirements.txt
+fi
+cd ~/tools/
+echo "done"
+
+
+
+
+
+

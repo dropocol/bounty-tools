@@ -19,6 +19,9 @@ sudo apt-get install -y python-setuptools
 
 sudo apt-get -y install xvfb
 sudo apt-get -y install phantomjs
+
+sudo add-apt-repository ppa:canonical-chromium-builds/stage
+sudo apt update
 sudo apt install -y chromium-browser
 
 pip3 install virtualenv
@@ -44,7 +47,7 @@ cd ~/tools/
 
 #Don't forget to set up AWS credentials!
 echo "Don't forget to set up AWS credentials!"
-apt install -y awscli
+sudo apt install -y awscli
 echo "Don't forget to set up AWS credentials!"
 
 
@@ -61,22 +64,22 @@ cd ~/zk-scripts/bounty-tools
 
 #---------------------------------------------------------------------
 #scripts
-cd ~/zk-scripts/bounty-tools/
+cd ~/zk-scripts/bounty-tools/scripts
 chmod +x ./script.sh
 ./script.sh
 
 
 #---------------------------------------------------------------------
 #vhost
-cd ~/zk-scripts/bounty-tools/
-chmod +x vhost.sh
+cd ~/zk-scripts/bounty-tools/scripts
+chmod +x ./vhost.sh
 ./vhost.sh
 
 
 
 #---------------------------------------------------------------------
 #subdomain
-cd ~/zk-scripts/bounty-tools/
+cd ~/zk-scripts/bounty-tools/scripts
 chmod +x ./subdomain.sh
 ./subdomain.sh
 
@@ -84,7 +87,7 @@ chmod +x ./subdomain.sh
 
 #---------------------------------------------------------------------
 #takeover
-cd ~/zk-scripts/bounty-tools/
+cd ~/zk-scripts/bounty-tools/scripts
 chmod +x ./takeover.sh
 ./takeover.sh
 
@@ -92,7 +95,7 @@ chmod +x ./takeover.sh
 
 #---------------------------------------------------------------------
 #s3-bucket
-cd ~/zk-scripts/bounty-tools/
+cd ~/zk-scripts/bounty-tools/scripts
 chmod +x ./bucket.sh
 ./bucket.sh
 
@@ -100,7 +103,7 @@ chmod +x ./bucket.sh
 
 #---------------------------------------------------------------------
 #screenshot
-cd ~/zk-scripts/bounty-tools/
+cd ~/zk-scripts/bounty-tools/scripts
 chmod +x ./screenshot.sh
 ./screenshot.sh
 
@@ -108,7 +111,7 @@ chmod +x ./screenshot.sh
 
 #---------------------------------------------------------------------
 #git-tools
-cd ~/zk-scripts/bounty-tools/
+cd ~/zk-scripts/bounty-tools/scripts
 chmod +x ./github.sh
 ./github.sh
 
@@ -116,7 +119,7 @@ chmod +x ./github.sh
 
 #---------------------------------------------------------------------
 #link-scanner
-cd ~/zk-scripts/bounty-tools/
+cd ~/zk-scripts/bounty-tools/scripts
 chmod +x ./link-scanner.sh
 ./link-scanner.sh
 
@@ -124,7 +127,7 @@ chmod +x ./link-scanner.sh
 
 #---------------------------------------------------------------------
 #scanner
-cd ~/zk-scripts/bounty-tools/
+cd ~/zk-scripts/bounty-tools/scripts
 chmod +x ./scanner.sh
 ./scanner.sh
 
@@ -141,6 +144,4 @@ chmod +x ./scanner.sh
 
 echo -e "\n\n\n\n\n\n\n\n\n\n\nDone! All tools are set up in ~/tools"
 ls -la
-echo "export GITROB_ACCESS_TOKEN=token for gitrob"
-echo "export GITHUBTOKEN=token for github"
-echo "One last time: don't forget to set up AWS credentials in ~/.aws/!"
+keys
